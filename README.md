@@ -1,7 +1,7 @@
 # OOP_HW2
 Object Oriented Programming Homework 2
 
-DirectedWeightedGraph:
+# DirectedWeightedGraph:
 
 We save the vertices as a HashMap<Integer, NodeData>, the Integer is the key (NodeData.getKey()) of the NodeData.
 
@@ -19,9 +19,12 @@ Removing a vertex: remove the node with [NodeDataMap].remove(key), then remove e
 
 Removing an edge: [EdgeDataMap].get(src).remove(dest).
 
-DirectedWeightedGraphAlgorithms:
+
+
+# DirectedWeightedGraphAlgorithms:
 
 Copying a graph is just adding all existing nodes and then connecting them based on the existing edges.
+
 
 isConnected:
 
@@ -33,6 +36,7 @@ is there a path (use the function shortestPath) from the current vertex to the o
 
 if we arrived at the end of the funciton, it means the graph is connected, return true.
 
+
 shortestPathDist:
 
 calculate the shortest path (using shortestPath function)
@@ -42,6 +46,7 @@ add the weight of all the edges (if the path is 1->2->3->4->5, we add the weight
 add the weight of all nodes (there is a weight value to the nodes, all the examples had it be "0" but we guess it could be different.
 
 return the sum.
+
 
 center:
 
@@ -54,5 +59,6 @@ each time, go over all vertices again (except the current one)
 add the shortest path distance from the current vertex to the observed one to the sum.
 
 check which vertex has the lowest sum, return it.
+
 
 shortestPath: we looked on the internet and didn't find a suiting algorithm. we currently use a stack and recursion. same for tsp.
