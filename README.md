@@ -85,3 +85,36 @@ return this path
 100,000 - 0.483s, 0.4s
 
 1,000,000 - 5.417s, 2.533s
+
+
+# GUI Instructions:
+
+you have 3 options: load a graph (select a file), load the given graph (the argument with which the program ran), and create a brand new graph.
+
+the first will open a file explorer in which you can only view directories and .json files.
+
+the second option will automatically load the given graph.
+
+the third option will open a blank graph.
+
+while viewing a graph you have the following options:
+
+create a new vertex - will ask you to click on the graph and then open a pop-up window to ask you for the weight, info, and tag of the new vertex. after clicking "create" it will create the vertex.
+
+create a new edge - will ask you to click on 2 vertices on the graph and the open a pop-up window to ask you for the weight, info and tag of the new edge. after clicking "create" it will create the edge.
+
+delete selected vertex - will delete the selected vertex
+
+delete selected edge - will delete the selected edge
+
+to select an edge or a vertex, simply click on it, and it will appeare green with its info displayed at the bottom.
+
+save graph to file - will save the current graph to a file (will open the file explorer).
+
+calculate shortest path - will ask you to choose 2 vertices, after which it will highlight the shortest path from 1 vertex to the other.
+
+calculate center - will highlight the center of the graph.
+
+back to menu - will return to the main window.
+
+to close the program, simply click on the "X" at the top of the window.
