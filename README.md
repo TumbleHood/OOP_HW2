@@ -61,4 +61,29 @@ add the shortest path distance from the current vertex to the observed one to th
 check which vertex has the lowest sum, return it.
 
 
-shortestPath: we looked on the internet and didn't find a suiting algorithm. we currently use a stack and recursion. same for tsp.
+shortestPath:
+
+if the source and dest are equal, return just this node
+
+go over all edges connected to the source
+
+for each dest in edge, repeat the process for the dest in the edge and the initial dest, while pushing the source to a stack and popping it later, so we won't go in a loop.
+
+add the path to the paths list
+
+calculate the shortest path
+
+return this path
+
+
+# testing with larger graphs:
+
+1,000 - load: 0.118s, save: 0.033s
+
+10,000 - load: 0.064s, save: 0.055s
+100000
+0.483
+0.4
+1000000
+5.417
+2.533
