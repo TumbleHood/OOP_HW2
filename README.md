@@ -14,19 +14,19 @@ Removing an edge: [EdgeDataMap].get(src).remove(dest).
 DirectedWeightedGraphAlgorithms:
 Copying a graph is just adding all existing nodes and then connecting them based on the existing edges.
 isConnected:
-1. go over all vertices.
-2. each time, go over all vertices again (except the current one)
-3. is there a path (use the function shortestPath) from the current vertex to the one we are checking? if there is not, we break the function and return false.
-4. if we arrived at the end of the funciton, it means the graph is connected, return true.
+go over all vertices.
+each time, go over all vertices again (except the current one)
+is there a path (use the function shortestPath) from the current vertex to the one we are checking? if there is not, we break the function and return false.
+if we arrived at the end of the funciton, it means the graph is connected, return true.
 shortestPathDist:
-1. calculate the shortest path (using shortestPath function)
-2. add the weight of all the edges (if the path is 1->2->3->4->5, we add the weight of 1->2, and then 2->3 etc.).
-3. add the weight of all nodes (there is a weight value to the nodes, all the examples had it be "0" but we guess it could be different.
-4. return the sum.
+calculate the shortest path (using shortestPath function)
+add the weight of all the edges (if the path is 1->2->3->4->5, we add the weight of 1->2, and then 2->3 etc.).
+add the weight of all nodes (there is a weight value to the nodes, all the examples had it be "0" but we guess it could be different.
+return the sum.
 center:
-1. check if the graph is connected (if not, return null)
-2. go over all vertices.
-3. each time, go over all vertices again (except the current one)
-4. add the shortest path distance from the current vertex to the observed one to the sum.
-5. check which vertex has the lowest sum, return it.
+check if the graph is connected (if not, return null)
+go over all vertices.
+each time, go over all vertices again (except the current one)
+add the shortest path distance from the current vertex to the observed one to the sum.
+check which vertex has the lowest sum, return it.
 shortestPath: we looked on the internet and didn't find a suiting algorithm. we currently use a stack and recursion. same for tsp.
